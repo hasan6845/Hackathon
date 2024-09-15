@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Dynamic Resume Builder</h1>
+    </header>
+
+    <!-- Resume Form -->
+    <section id="resume-form-section">
+        <h2>Fill Out Your Information</h2>
+        <form id="resume-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <input type="text" id="education" placeholder="Enter your education" required>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" placeholder="e.g., HTML, CSS, JS" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" placeholder="Enter your work experience" required></textarea>
+            </div>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <!-- Resume Display Section -->
+    <section id="resume-display">
+        <h2>Your Resume</h2>
+
+        <!-- Personal Information -->
+        <div id="display-name">Name: </div>
+        <div id="display-email">Email: </div>
+        <div id="display-phone">Phone: </div>
+
+        <!-- Education -->
+        <div id="display-education">Education: </div>
+
+        <!-- Skills -->
+        <div id="display-skills">Skills: </div>
+
+        <!-- Work Experience -->
+        <div id="display-experience">Work Experience: </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
